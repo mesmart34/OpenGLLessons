@@ -9,6 +9,8 @@
 #include "GLFW/glfw3.h"
 #include <iostream>
 #include "Mesh.h"
+#include <cmath>
+#include "glm/glm/glm.hpp"
 
 class Application {
 
@@ -19,6 +21,9 @@ public:
     void Run();
     void Start();
     void Update(float dt);
+    void Task1(float dt);
+    void Task2(float dt);
+    void Task3(float dt);
     void Shutdown();
 
     static void ResizeCallback(GLFWwindow* window, int w, int h);

@@ -25,6 +25,7 @@ void Application::Init() {
 
 void Application::Run() {
     Start();
+    auto start = glfwGetTime();
     while (m_running) {
         glfwPollEvents();
         m_running = !glfwWindowShouldClose(m_window);
@@ -48,7 +49,10 @@ void Application::Run() {
         if(glfwGetKey(m_window, GLFW_KEY_ESCAPE))
             Shutdown();
 
-        Update(0.0f);
+        auto end = glfwGetTime();
+        auto delta = end - start;
+        Update(delta);
+        start = end;
 
 
         glfwSwapBuffers(m_window);
@@ -65,8 +69,7 @@ void Application::Start() {
 }
 
 void Application::Update(float dt) {
-    m_mesh.Rotate(glm::vec3(1, 0, 0));
-    m_mesh.Draw(GL_POLYGON);
+    Task2(dt);
 }
 
 void Application::Shutdown() {
@@ -78,6 +81,100 @@ void Application::ResizeCallback(GLFWwindow *window, int w, int h) {
     app->m_width = w;
     app->m_height = h;
     glViewport(0, 0, w, h);
+}
+
+void Application::Task1(float dt) {
+    static auto start = [&]() {
+        static bool done = false;
+        if(done)
+            return;
+        auto vertices = std::vector<glm::vec3>();
+        const auto step = 90;
+        const auto r = 1.0f;
+        for(auto angle = 0.0f; angle < 360.0f; angle += step)
+        {
+            const auto x = cosf(glm::radians(angle)) * r;
+            const auto y = sinf(glm::radians(angle)) * r;
+            const auto vertex = glm::vec3(x, y, 0.0f);
+            vertices.push_back(vertex);
+        }
+        m_mesh.SetVertices(vertices);
+        done = true;
+    };
+    start();
+    m_mesh.Draw(GL_POLYGON);
+}
+
+void Application::Task2(float dt) {
+    static auto start = [&]() {
+        static bool done = false;
+        if(done)
+            return;
+        auto vertices = std::vector<glm::vec3>();
+        const auto step = 90.0f;
+        const auto r = 1.0f;
+        for(auto angle = 0.0f; angle < 360.0f; angle += 30)
+        {
+            const auto x = cosf(glm::radians(angle)) * r;
+            const auto y = sinf(glm::radians(angle)) * r;
+            const auto vertex = glm::vec3(x, y, 0.0f);
+            vertices.push_back(vertex);
+        }
+        m_mesh.SetVertices(vertices);
+        done = true;
+    };
+    start();
+    static glm::vec3 scale = glm::vec3(1, 1, 1);
+    static auto timer = 0.0f;
+    timer += dt * 10;
+    scale.x = sinf(timer) + 10.0f;
+    scale.y = sinf(timer) + 10.0f;
+    scale *= 0.01f;
+    m_mesh.SetScale(scale);
+
+    auto f = [&](float x) {
+        return cosf(x);
+    };
+
+
+    auto converted = m_mesh.GetPosition().x / (m_width / (float)m_height);
+    static auto dir = -1;
+    if(converted <= -1)
+        dir = 1;
+    else if(converted >= 1)
+        dir = -1;
+    const auto speed = 0.1f * dt * dir;
+    m_mesh.Rotate(glm::vec3(0, 0, dt * 50));
+    m_mesh.Move(glm::vec3(speed * 3, f(m_mesh.GetPosition().x * 50) * 0.01f, 0));
+    m_mesh.Draw(GL_POLYGON);
+}
+
+void Application::Task3(float dt) {
+    static auto start = [&]() {
+        static bool done = false;
+        if(done)
+            return;
+        auto vertices = std::vector<glm::vec3>();
+        const auto step = 90.0f;
+        const auto r = 1.0f;
+        for(auto angle = 0.0f; angle < 360.0f; angle += step)
+        {
+            const auto x = cosf(glm::radians(angle)) * r;
+            const auto y = sinf(glm::radians(angle)) * r;
+            const auto vertex = glm::vec3(x, y, 0.0f);
+            vertices.push_back(vertex);
+        }
+        m_mesh.SetVertices(vertices);
+        m_mesh.SetPosition(glm::vec3(0.1f, 0, 0));
+        done = true;
+    };
+    start();
+
+    static auto angle = 0.0f;
+    angle += dt * 100;
+    const auto speed = 0.1f * dt;
+    m_mesh.SetRotation(glm::vec3(0, 0, angle));
+    m_mesh.RotateAroundAndDraw();
 }
 
 

@@ -22,6 +22,8 @@ public:
     void SetScale(const glm::vec3& scale);
     void Move(const glm::vec3& position);
     void Rotate(const glm::vec3& rotation);
+    void RotateAroundAndDraw();
+    glm::vec3 GetPosition() const;
 
 private:
     std::vector<glm::vec3> m_vertices;

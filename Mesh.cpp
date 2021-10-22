@@ -9,6 +9,8 @@ void Mesh::SetVertices(const std::vector<glm::vec3> &vertices) {
 }
 
 void Mesh::Draw(GLenum mode) {
+    if(m_vertices.empty())
+        return;
     glTranslatef(m_position.x, m_position.y, m_position.z);
     glRotatef(m_rotation.x, 1, 0, 0);
     glRotatef(m_rotation.y, 0, 1, 0);
@@ -41,4 +43,26 @@ void Mesh::Move(const glm::vec3 &position) {
 
 void Mesh::Rotate(const glm::vec3 &rotation) {
     m_rotation += rotation;
+}
+
+glm::vec3 Mesh::GetPosition() const {
+    return m_position;
+}
+
+void Mesh::RotateAroundAndDraw() {
+    if(m_vertices.empty())
+        return;
+    glTranslatef(m_position.x, m_position.y, m_position.z);
+    glRotatef(m_rotation.x, 1, 0, 0);
+    glRotatef(m_rotation.y, 0, 1, 0);
+    glRotatef(m_rotation.z, 0, 0, 1);
+    glTranslatef(-m_position.x, -m_position.y, -m_position.z);
+    glScalef(m_scale.x, m_scale.y, m_scale.z);
+    glBegin(GL_POLYGON);
+    for(auto vertex : m_vertices)
+    {
+        glColor3f(1.0,0.5,0.0);
+        glVertex3f(vertex.x, vertex.y, vertex.z);
+    }
+    glEnd();
 }
