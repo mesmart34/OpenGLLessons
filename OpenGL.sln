@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task5", "Task5\Task5.csproj", "{2BC587DA-BE3B-4C9D-AEA8-D5E37BF25E21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task5", "Task5\Task5.csproj", "{2BC587DA-BE3B-4C9D-AEA8-D5E37BF25E21}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4", "Task4\Task4.csproj", "{13E84327-07DB-4EE5-9B4E-2B687FD0B84F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grafica", "wingrafika\grafica.csproj", "{F316ECCB-73C2-45AF-B691-CCBA0D5B5E68}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1", "Task1\Task1.csproj", "{7708DE8A-DEC2-44BF-8A51-0A27FC068A61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task3", "Task3\Task3.csproj", "{F316ECCB-73C2-45AF-B691-CCBA0D5B5E68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{13E84327-07DB-4EE5-9B4E-2B687FD0B84F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13E84327-07DB-4EE5-9B4E-2B687FD0B84F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13E84327-07DB-4EE5-9B4E-2B687FD0B84F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7708DE8A-DEC2-44BF-8A51-0A27FC068A61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7708DE8A-DEC2-44BF-8A51-0A27FC068A61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7708DE8A-DEC2-44BF-8A51-0A27FC068A61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7708DE8A-DEC2-44BF-8A51-0A27FC068A61}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F316ECCB-73C2-45AF-B691-CCBA0D5B5E68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F316ECCB-73C2-45AF-B691-CCBA0D5B5E68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F316ECCB-73C2-45AF-B691-CCBA0D5B5E68}.Release|Any CPU.ActiveCfg = Release|Any CPU
