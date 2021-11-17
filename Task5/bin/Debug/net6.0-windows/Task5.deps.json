@@ -1,0 +1,67 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Task5/1.0.0": {
+        "dependencies": {
+          "OpenTK.Compatibility": "1.1.0.0",
+          "OpenTK": "1.1.0.0",
+          "OpenTK.GLControl": "1.1.0.0"
+        },
+        "runtime": {
+          "Task5.dll": {}
+        }
+      },
+      "OpenTK.Compatibility/1.1.0.0": {
+        "runtime": {
+          "OpenTK.Compatibility.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.1664.6217"
+          }
+        }
+      },
+      "OpenTK/1.1.0.0": {
+        "runtime": {
+          "OpenTK.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.1664.6217"
+          }
+        }
+      },
+      "OpenTK.GLControl/1.1.0.0": {
+        "runtime": {
+          "OpenTK.GLControl.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.1664.6217"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Task5/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OpenTK.Compatibility/1.1.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OpenTK/1.1.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OpenTK.GLControl/1.1.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
