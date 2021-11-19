@@ -7,27 +7,27 @@ namespace WindowsFormsApp1
     public partial class Form1 : Form
     {
         private Line line;
-        private Graphics g;
+        private Graphics graphics;
         private Circle circle;
-        private Mnogougol Mnogougol;
-        private PravMnogougol PravMnogougol;
+        private Polygon polygon;
+        private RegularPolygon regularPolygon;
 
         public Form1()
         {
             InitializeComponent();
-            g = pictureBox1.CreateGraphics();
-            line = new Line(g, Color.Brown);
-            circle = new Circle(g);
-            Mnogougol = new Mnogougol(g);
-            PravMnogougol = new PravMnogougol(g);
+            graphics = pictureBox1.CreateGraphics();
+            line = new Line(graphics, Color.Brown);
+            circle = new Circle(graphics);
+            polygon = new Polygon(graphics);
+            regularPolygon = new RegularPolygon(graphics);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-            button1.Enabled = false;
+            line.Clear(pictureBox1.BackColor);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void drawLineButton(object sender, EventArgs e)
         {
             if (textBox1.Text != "")
                 line.X1 = int.Parse(textBox1.Text);
@@ -42,21 +42,12 @@ namespace WindowsFormsApp1
             line.Draw();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void CancelLine(object sender, EventArgs e)
         {
             line.Undo(pictureBox1.BackColor);
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            line.Clear(pictureBox1.BackColor);
-        }
-
-        private void button5_Click(object sender, EventArgs e)
+        private void drawCircleButton(object sender, EventArgs e)
         {
             if (textBox10.Text != "")
                 circle.X = int.Parse(textBox10.Text);
@@ -73,41 +64,41 @@ namespace WindowsFormsApp1
             circle.Draw();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void cancelCircleButton(object sender, EventArgs e)
         {
             circle.Undo(pictureBox1.BackColor);
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void inputPointButton(object sender, EventArgs e)
         {
             var text = textBox12.Text;
-            Mnogougol.AddPoint(text);
+            polygon.AddPoint(text);
             listBox1.Items.Add(text);
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void drawPolygon(object sender, EventArgs e)
         {
-            Mnogougol.Draw();
+            polygon.Draw();
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void cancelPolygon(object sender, EventArgs e)
         {
-            Mnogougol.Undo(pictureBox1.BackColor);
+            polygon.Undo(pictureBox1.BackColor);
             listBox1.Items.Clear();
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        private void drawRegularPolygonButton(object sender, EventArgs e)
         {
-            PravMnogougol.X = int.Parse(textBox15.Text);
-            PravMnogougol.Y = int.Parse(textBox14.Text);
-            PravMnogougol.N = int.Parse(textBox13.Text);
-            PravMnogougol.Radius = int.Parse(textBox16.Text);
-            PravMnogougol.Draw();
+            regularPolygon.X = int.Parse(textBox15.Text);
+            regularPolygon.Y = int.Parse(textBox14.Text);
+            regularPolygon.N = int.Parse(textBox13.Text);
+            regularPolygon.Radius = int.Parse(textBox16.Text);
+            regularPolygon.Draw();
         }
 
-        private void button10_Click(object sender, EventArgs e)
+        private void cancelRegularPolygon(object sender, EventArgs e)
         {
-            PravMnogougol.Undo(pictureBox1.BackColor);
+            regularPolygon.Undo(pictureBox1.BackColor);
         }
     }
 }

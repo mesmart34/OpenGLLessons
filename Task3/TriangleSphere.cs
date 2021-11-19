@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace grafica
+namespace Graphics
 {
-    public class TriangleSphere
+    public static class TriangleSphere
     {
         public static void Draw()
         {

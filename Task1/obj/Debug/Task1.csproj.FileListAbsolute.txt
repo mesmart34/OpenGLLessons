@@ -1,0 +1,11 @@
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task1\obj\Debug\Task1.csproj.AssemblyReference.cache
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task1\obj\Debug\Task1.csproj.SuggestedBindingRedirects.cache
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task1\obj\Debug\Task1.csproj.GenerateResource.cache
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task1\obj\Debug\Task1.csproj.CoreCompileInputs.cache
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task1\obj\Debug\WindowsFormsApp1.pdb

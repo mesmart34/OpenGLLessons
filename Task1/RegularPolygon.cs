@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace WindowsFormsApp1
 {
-    public class PravMnogougol
+    public class RegularPolygon
     {
         private readonly SolidBrush Brush;
         private readonly Pen Pen;
@@ -15,7 +15,7 @@ namespace WindowsFormsApp1
         public int Radius { get; set; }
         public int N { get; set; }
 
-        public PravMnogougol(Graphics g)
+        public RegularPolygon(Graphics g)
         {
             Brush = new SolidBrush(Color.Blue);
             Pen = new Pen(Color.Brown, 5);

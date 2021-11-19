@@ -3,14 +3,14 @@ using System.Drawing;
 
 namespace WindowsFormsApp1
 {
-    public class Mnogougol
+    public class Polygon
     {
         private List<PointF> Points;
         private readonly SolidBrush Brush;
         private readonly Pen Pen;
         private Graphics g;
 
-        public Mnogougol(Graphics g)
+        public Polygon(Graphics g)
         {
             this.g = g;
             Points = new List<PointF>();
