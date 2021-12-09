@@ -1,0 +1,12 @@
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task6\bin\Debug\Task6.exe.config
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task6\bin\Debug\Task6.exe
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task6\bin\Debug\Task6.pdb
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task6\bin\Debug\OpenTK.Compatibility.dll
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task6\bin\Debug\OpenTK.dll
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task6\bin\Debug\OpenTK.GLControl.dll
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task6\obj\Debug\Task6.csproj.AssemblyReference.cache
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task6\obj\Debug\Task6.csproj.SuggestedBindingRedirects.cache
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task6\obj\Debug\Task6.csproj.CoreCompileInputs.cache
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task6\obj\Debug\Task6.csproj.CopyComplete
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task6\obj\Debug\Task6.exe
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task6\obj\Debug\Task6.pdb
