@@ -12,18 +12,24 @@ namespace Task8
         public float Size { get; set; }
         public Vector3 Position { get; set; }
         public Vector3 Color { get; set; }
+        public Material Material { get; set; }
 
-        public bool Intersects(Vector3 start, Vector3 direction, out RayHit hit)
+        public bool Intersects(Ray ray, ref RayHit bestHit)
         {
-            var denom = Vector3.Dot(start, direction);
-            hit = new RayHit(); 
-            if (Math.Abs(denom) <= 1e-4f)
-                return false;
-            var t = -(Vector3.Dot(start, direction) + Size) / Vector3.Dot(start, direction);
-            if (t <= 1e-4)
-                return false;
-            hit.Point = start + t * direction;
-            return true;
+            var groundAlbedo = Material.Albedo;
+            var groundSpecular = Material.Specular;
+
+            float t = -ray.Origin.Y / ray.Direction.Y;
+            if (t > 0 && t < bestHit.Distance)
+            {
+                bestHit.Distance = t;
+                bestHit.Position = ray.Origin + t * ray.Direction;
+                bestHit.Normal = new Vector3(0.0f, 1.0f, 0.0f);
+                bestHit.Albedo = groundAlbedo;
+                bestHit.Specular = groundSpecular;
+                return true;
+            }
+            return false;
         }
     }
 }

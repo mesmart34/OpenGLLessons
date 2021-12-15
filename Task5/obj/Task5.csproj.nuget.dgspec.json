@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\artem\\Documents\\GitHub\\OpenGLLessons\\Task5\\Task5.csproj": {}
+    "C:\\Users\\artem\\Documents\\OpenGLLessons\\Task5\\Task5.csproj": {}
   },
   "projects": {
-    "C:\\Users\\artem\\Documents\\GitHub\\OpenGLLessons\\Task5\\Task5.csproj": {
+    "C:\\Users\\artem\\Documents\\OpenGLLessons\\Task5\\Task5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\artem\\Documents\\GitHub\\OpenGLLessons\\Task5\\Task5.csproj",
+        "projectUniqueName": "C:\\Users\\artem\\Documents\\OpenGLLessons\\Task5\\Task5.csproj",
         "projectName": "Task5",
-        "projectPath": "C:\\Users\\artem\\Documents\\GitHub\\OpenGLLessons\\Task5\\Task5.csproj",
+        "projectPath": "C:\\Users\\artem\\Documents\\OpenGLLessons\\Task5\\Task5.csproj",
         "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\artem\\Documents\\GitHub\\OpenGLLessons\\Task5\\obj\\",
+        "outputPath": "C:\\Users\\artem\\Documents\\OpenGLLessons\\Task5\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\artem\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Task8
 {
@@ -10,8 +11,9 @@ namespace Task8
     {
         static void Main(string[] args)
         {
-            var raytracing = new Raytracing();
-            raytracing.Run(60.0);
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1()); 
         }
     }
 }

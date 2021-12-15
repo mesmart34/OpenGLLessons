@@ -11,6 +11,7 @@ namespace Task8
     {
         Vector3 Position { get; set; }
         Vector3 Color { get; set; }
-        bool Intersects(Vector3 start, Vector3 direction, out RayHit hit);
+        Material Material { get; set; }
+        bool Intersects(Ray ray, ref RayHit bestHit);
     }
 }

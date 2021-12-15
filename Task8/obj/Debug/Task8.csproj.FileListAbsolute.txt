@@ -10,3 +10,17 @@ C:\Users\artem\Documents\GitHub\OpenGLLessons\Task8\obj\Debug\Task8.csproj.CoreC
 C:\Users\artem\Documents\GitHub\OpenGLLessons\Task8\obj\Debug\Task8.csproj.CopyComplete
 C:\Users\artem\Documents\GitHub\OpenGLLessons\Task8\obj\Debug\Task8.exe
 C:\Users\artem\Documents\GitHub\OpenGLLessons\Task8\obj\Debug\Task8.pdb
+C:\Users\artem\Documents\OpenGLLessons\Task8\bin\Debug\Task8.exe.config
+C:\Users\artem\Documents\OpenGLLessons\Task8\bin\Debug\Task8.exe
+C:\Users\artem\Documents\OpenGLLessons\Task8\bin\Debug\Task8.pdb
+C:\Users\artem\Documents\OpenGLLessons\Task8\bin\Debug\OpenTK.Compatibility.dll
+C:\Users\artem\Documents\OpenGLLessons\Task8\bin\Debug\OpenTK.dll
+C:\Users\artem\Documents\OpenGLLessons\Task8\bin\Debug\OpenTK.GLControl.dll
+C:\Users\artem\Documents\OpenGLLessons\Task8\obj\Debug\Task8.csproj.AssemblyReference.cache
+C:\Users\artem\Documents\OpenGLLessons\Task8\obj\Debug\Task8.csproj.SuggestedBindingRedirects.cache
+C:\Users\artem\Documents\OpenGLLessons\Task8\obj\Debug\Task8.csproj.CoreCompileInputs.cache
+C:\Users\artem\Documents\OpenGLLessons\Task8\obj\Debug\Task8.csproj.CopyComplete
+C:\Users\artem\Documents\OpenGLLessons\Task8\obj\Debug\Task8.exe
+C:\Users\artem\Documents\OpenGLLessons\Task8\obj\Debug\Task8.pdb
+C:\Users\artem\Documents\OpenGLLessons\Task8\obj\Debug\Task8.Form1.resources
+C:\Users\artem\Documents\OpenGLLessons\Task8\obj\Debug\Task8.csproj.GenerateResource.cache
