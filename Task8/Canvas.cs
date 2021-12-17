@@ -4,7 +4,7 @@ using System.Drawing;
 
 namespace Task8
 {
-    class Canvas
+    public class Canvas
     {
         public int Width { get; private set; }
         public int Height { get; private set; }

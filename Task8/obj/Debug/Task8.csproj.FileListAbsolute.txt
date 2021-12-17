@@ -24,3 +24,5 @@ C:\Users\artem\Documents\OpenGLLessons\Task8\obj\Debug\Task8.exe
 C:\Users\artem\Documents\OpenGLLessons\Task8\obj\Debug\Task8.pdb
 C:\Users\artem\Documents\OpenGLLessons\Task8\obj\Debug\Task8.Form1.resources
 C:\Users\artem\Documents\OpenGLLessons\Task8\obj\Debug\Task8.csproj.GenerateResource.cache
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task8\obj\Debug\Task8.Form1.resources
+C:\Users\artem\Documents\GitHub\OpenGLLessons\Task8\obj\Debug\Task8.csproj.GenerateResource.cache
