@@ -1,0 +1,15 @@
+C:\Users\artem\Documents\OpenGLLessons\Task7\bin\Debug\Task7.exe.config
+C:\Users\artem\Documents\OpenGLLessons\Task7\bin\Debug\Task7.exe
+C:\Users\artem\Documents\OpenGLLessons\Task7\bin\Debug\Task7.pdb
+C:\Users\artem\Documents\OpenGLLessons\Task7\bin\Debug\OpenTK.Compatibility.dll
+C:\Users\artem\Documents\OpenGLLessons\Task7\bin\Debug\OpenTK.dll
+C:\Users\artem\Documents\OpenGLLessons\Task7\bin\Debug\OpenTK.GLControl.dll
+C:\Users\artem\Documents\OpenGLLessons\Task7\obj\Debug\Task7.csproj.AssemblyReference.cache
+C:\Users\artem\Documents\OpenGLLessons\Task7\obj\Debug\Task7.csproj.SuggestedBindingRedirects.cache
+C:\Users\artem\Documents\OpenGLLessons\Task7\obj\Debug\Task7.Form1.resources
+C:\Users\artem\Documents\OpenGLLessons\Task7\obj\Debug\Task7.Properties.Resources.resources
+C:\Users\artem\Documents\OpenGLLessons\Task7\obj\Debug\Task7.csproj.GenerateResource.cache
+C:\Users\artem\Documents\OpenGLLessons\Task7\obj\Debug\Task7.csproj.CoreCompileInputs.cache
+C:\Users\artem\Documents\OpenGLLessons\Task7\obj\Debug\Task7.csproj.CopyComplete
+C:\Users\artem\Documents\OpenGLLessons\Task7\obj\Debug\Task7.exe
+C:\Users\artem\Documents\OpenGLLessons\Task7\obj\Debug\Task7.pdb
