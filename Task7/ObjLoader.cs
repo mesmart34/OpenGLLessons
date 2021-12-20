@@ -54,6 +54,7 @@ namespace Task7
 							normals.Add(new Vector3(float.Parse(words[0]), float.Parse(words[1]), float.Parse(words[2])));
 							break;
 
+
 						// face
 						case "f":
 							foreach (string w in words)
