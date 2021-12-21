@@ -13,3 +13,5 @@ C:\Users\artem\Documents\OpenGLLessons\Task7\obj\Debug\Task7.csproj.CoreCompileI
 C:\Users\artem\Documents\OpenGLLessons\Task7\obj\Debug\Task7.csproj.CopyComplete
 C:\Users\artem\Documents\OpenGLLessons\Task7\obj\Debug\Task7.exe
 C:\Users\artem\Documents\OpenGLLessons\Task7\obj\Debug\Task7.pdb
+C:\Users\artem\Documents\OpenGLLessons\Task7\bin\Debug\AssimpNet.dll
+C:\Users\artem\Documents\OpenGLLessons\Task7\bin\Debug\AssimpNet.xml

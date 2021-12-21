@@ -10,7 +10,7 @@ namespace Task8
 {
     public class Raytracing
     {
-        private Scene _scene;
+        public Scene _scene;
         private Bitmap _backgroundTexture;
         private Vector3 _cameraPostition;
         private float _fov = 45.0f;
@@ -21,7 +21,7 @@ namespace Task8
             _scene.AddLightSource(new Light(new Vector3(0, 10, 9), 1.0f));
             _backgroundTexture = new Bitmap("../../Background.jpg");
             _cameraPostition = new Vector3(0, 1, 9);
-            _scene.AddShape(new Sphere(new Vector3(0, 1, 3), 0.8f, new Material(new Vector3(0.9f, 0.1f, 0.1f), Vector3.One, 0.5f)));
+            _scene.AddShape(new Sphere(new Vector3(0, 1, 3), 0.8f, new Material(new Vector3(0.9f, 0.1f, 0.1f), Vector3.One, 1.0f)));
             _scene.AddShape(new Sphere(new Vector3(5, 5, -5), 5.0f, new Material(new Vector3(0.1f, 0.1f, 0.8f), Vector3.One, 1.0f)));
             _scene.AddShape(new Plane(new Vector3(0, 5, 0), new Material(Vector3.One * 0.7f, Vector3.One, 0.0f)));
         }
@@ -87,7 +87,7 @@ namespace Task8
                 diffuse_light_intensity += light.Intensity * Math.Max(0, Vector3.Dot(lightDir, bestHit.Normal));
                 //specular_light_intensity += powf(std::max(0.f, -reflect(-light_dir, N) * dir), material.specular_exponent) * lights[i].intensity;
             }
-            return bestHit.Color * diffuse_light_intensity + reflectColor;
+            return bestHit.Color * diffuse_light_intensity;
         }
 
         /* private Vector3 Shade(ref RayHit hit, ref Ray ray)

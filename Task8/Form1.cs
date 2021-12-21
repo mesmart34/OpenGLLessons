@@ -19,5 +19,18 @@ namespace Task8
             _raytracing = new Raytracing();
             pictureBox.Image = _raytracing.RenderToCanvas(_canvas);
         }
+
+        private void lightTrackBar_Scroll(object sender, EventArgs e)
+        {
+            foreach (var light in _raytracing._scene.GetLights())
+            {
+                light.Intensity = ((TrackBar)sender).Value / 100.0f;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            pictureBox.Image = _raytracing.RenderToCanvas(_canvas);
+        }
     }
 }
