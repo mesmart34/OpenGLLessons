@@ -40,7 +40,17 @@
       "ProjectGuid": "56137784-aa42-47bb-a87e-cea0993599e5",
       "DisplayName": "Task7",
       "ColorIndex": 6
+    },
+    "e542bcb5-9644-43cf-b67d-a2f47add1ca9": {
+      "ProjectGuid": "e542bcb5-9644-43cf-b67d-a2f47add1ca9",
+      "DisplayName": "Raytracing",
+      "ColorIndex": 7
+    },
+    "fb2f21c0-d20b-46d9-839b-8f3122267523": {
+      "ProjectGuid": "fb2f21c0-d20b-46d9-839b-8f3122267523",
+      "DisplayName": "Raytracing",
+      "ColorIndex": 8
     }
   },
-  "NextColorIndex": 7
+  "NextColorIndex": 9
 }
