@@ -7,3 +7,6 @@ C:\Users\artem\Documents\OpenGLLessons\Raytracing\obj\Debug\Raytracing.csproj.Co
 C:\Users\artem\Documents\OpenGLLessons\Raytracing\obj\Debug\Raytracing.exe
 C:\Users\artem\Documents\OpenGLLessons\Raytracing\obj\Debug\Raytracing.pdb
 C:\Users\artem\Documents\OpenGLLessons\Raytracing\obj\Debug\Raytracing.csproj.AssemblyReference.cache
+C:\Users\artem\Documents\OpenGLLessons\Raytracing\bin\Debug\OpenTK.Compatibility.dll
+C:\Users\artem\Documents\OpenGLLessons\Raytracing\bin\Debug\OpenTK.dll
+C:\Users\artem\Documents\OpenGLLessons\Raytracing\bin\Debug\OpenTK.GLControl.dll

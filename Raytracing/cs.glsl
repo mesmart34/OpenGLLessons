@@ -6,7 +6,8 @@ uniform mat4 projection;
 uniform mat4 view;
 uniform sampler2D skybox;
 
-#define PI 3.1415926538
+const float PI = 3.14159265f;
+const float EPSILON = 1e-8;
 
 struct Sphere
 {
@@ -14,6 +15,8 @@ struct Sphere
     float radius;
     vec3 albedo;
     vec3 specular;
+    float smoothness;
+    vec3 emission;
 };
 
 struct DirectionalLight
@@ -22,10 +25,21 @@ struct DirectionalLight
     float intensivity;
 };
 
-//layout(std430, binding = 1) buffer DirectionalLightBuffer
-//{
-   // DirectionalLight directionalLight;
-//};
+vec2 _Pixel;
+float _Seed;
+
+float sdot(vec3 x, vec3 y, float f = 1.0f)
+{
+    return clamp(dot(x, y) * f, 0, 1);
+}
+
+float rand()
+{
+    float result = fract(sin(_Seed / 100.0f * dot(_Pixel, vec2(12.9898f, 78.233f))) * 43758.5453f);
+    _Seed += 1.0f;
+    return result;
+}
+
 
 DirectionalLight CreateDirectionalLight(vec3 pos, float i)
 {
@@ -72,16 +86,22 @@ struct RayHit
     vec3 normal;
     vec3 albedo;
     vec3 specular;
+    float smoothness;
+    vec3 emission;
+    bool end;
 };
 
 RayHit CreateRayHit()
 {
     RayHit hit;
-    hit.position = vec3(0.0f, 0.0f, 0.0f);
-    hit.distance = 1. / 0;
-    hit.normal = vec3(0.0f, 0.0f, 0.0f);
-    hit.albedo = vec3(1, 1, 1);
-    hit.specular = vec3(1, 1, 1);
+    hit.position = vec3(0.0, 0.0, 0.0);
+    hit.distance = 1./0;
+    hit.normal = vec3(0.0, 0.0, 0.0);
+    hit.albedo = vec3(0, 0, 0);
+    hit.specular = vec3(0, 0, 0);
+    hit.smoothness = 0.0;
+    hit.emission = vec3(0.0, 0.0, 0.0);
+    hit.end = false;
     return hit;
 }
 
@@ -115,6 +135,8 @@ void IntersectSphere(Ray ray, inout RayHit bestHit, Sphere sphere)
         bestHit.normal = normalize(bestHit.position - sphere.position);
         bestHit.albedo = sphere.albedo;
         bestHit.specular = sphere.specular;
+        bestHit.smoothness = sphere.smoothness;
+        bestHit.emission = sphere.emission;
     }
 }
 
@@ -126,9 +148,11 @@ void IntersectGroundPlane(Ray ray, inout RayHit bestHit)
     {
         bestHit.distance = t;
         bestHit.position = ray.origin + t * ray.direction;
-        bestHit.normal = vec3(0.0f, 1.0f, 0.0f);
-        bestHit.albedo = vec3(0.8f, 0.8f, 0.8f);
-        bestHit.specular = vec3(0.5, 0.5, 0.5);
+        bestHit.normal = vec3(0.0f, 0.0f, 0.0f);
+        bestHit.albedo = vec3(0.5f, 0.5f, 0.5f);
+        bestHit.specular = vec3(0.03, 0.03, 0.03);
+        bestHit.smoothness = 0.2f;
+        bestHit.emission = vec3(0.0f, 0.0f, 0.0f);
     }
 }
 
@@ -157,6 +181,36 @@ float atan2(in float y, in float x)
     return x == 0.0 ? sign(y)*PI/2 : atan(y, x);
 }
 
+mat3x3 GetTangentSpace(vec3 normal)
+{
+    // Choose a helper vector for the cross product
+    vec3 helper = vec3(1, 0, 0);
+    if (abs(normal.x) > 0.99f)
+        helper = vec3(0, 0, 1);
+
+    // Generate vectors
+    vec3 tangent = normalize(cross(normal, helper));
+    vec3 binormal = normalize(cross(normal, tangent));
+    return mat3x3(tangent, binormal, normal);
+}
+
+vec3 SampleHemisphere(vec3 normal, float alpha)
+{
+    // Sample the hemisphere, where alpha determines the kind of the sampling
+    float cosTheta = pow(rand(), 1.0f / (alpha + 1.0f));
+    float sinTheta = sqrt(1.0f - cosTheta * cosTheta);
+    float phi = 2 * PI * rand();
+    vec3 tangentSpaceDir = vec3(cos(phi) * sinTheta, sin(phi) * sinTheta, cosTheta);
+
+    // Transform direction to world space
+    return tangentSpaceDir * GetTangentSpace(normal);
+}
+
+float SmoothnessToPhongAlpha(float s)
+{
+    return pow(1000.0f, s * s);
+}
+
 vec3 Shade(inout Ray ray, RayHit hit)
 {
     if (hit.distance < 1. / 0)
@@ -178,10 +232,11 @@ vec3 Shade(inout Ray ray, RayHit hit)
     }
     else
     {
-        //ray.energy = vec3(0, 0, 0);
+        ray.energy = vec3(0, 0, 0);
+        hit.end = true;
         float theta = acos(ray.direction.y) / -PI;
         float phi = atan2(ray.direction.x, -ray.direction.z) / -PI * 0.5f;
-        return texture2D(skybox, vec2(phi, theta)).xyz;
+        return vec3(0.1, 0.1, 0.1);
     }
 }
 
@@ -198,19 +253,22 @@ void main() {
     uv.y = -uv.y;
 	spheres[0] = CreateSphere(vec3(-5, 0, -10), 1.0);
     spheres[0].albedo = vec3(1, 0, 0);
-    spheres[0].specular *= 0.5;
+    spheres[0].specular = vec3(0.04f, 0.04f, 0.04f);
 	spheres[1] = CreateSphere(vec3(1, 0, -10), 2.0);
     spheres[1].albedo = vec3(1, 1, 0);
-    spheres[1].specular *= 0.8;
+    spheres[1].specular = vec3(0.04f, 0.04f, 0.04f);
 	spheres[2] = CreateSphere(vec3(7, 0, -10), 0.5);
     spheres[2].albedo *= 0.2;
+    spheres[2].specular = vec3(0.04f, 0.04f, 0.04f);
 	Ray ray = CreateCameraRay(uv);
 	
 	vec3 result = vec3(0.0, 0.0, 0.0);
-    for(int i = 0; i < 5 ; i++)
+    for(int i = 0; i < 3; i++)
     {
         RayHit hit = Trace(ray);
-        result += ray.energy * Shade(ray, hit);
+        result += Shade(ray, hit);
+        //if(hit.end)
+          //  result += Shade(ray, hit);
         if(!any(ray.energy))
             break;
     }

@@ -41,7 +41,7 @@ namespace Raytracing
         private Vector2 delta;
         private bool _firstMove = true;
 
-        public Raytracing() : base(800, 600)
+        public Raytracing() : base(1024, 768)
         {
            //CursorVisible = false;
         }
@@ -130,8 +130,8 @@ namespace Raytracing
             Title = camera.CameraFront.ToString();
 
             camera.Position += new Vector3(0, move.Y, 0);
-            camera.Position += camera.CameraFront * speedX * 0.1f;
-            camera.Position += Vector3.Cross(camera.CameraFront, camera.CameraUp) * speedY * 0.1f;
+            camera.Position -= camera.CameraFront * speedX * 0.1f;
+            camera.Position -= Vector3.Cross(camera.CameraFront, camera.CameraUp) * speedY * 0.1f;
             //camera.Position += new Vector3(cameraFront.Z, cameraFront.Y, cameraFront.X) * speedY * 0.1f;
 
         }
