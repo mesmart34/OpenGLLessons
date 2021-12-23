@@ -44,6 +44,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -58,6 +59,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Raytracing.cs" />
     <Compile Include="SSBO.cs" />
+    <Compile Include="CSTexture.cs" />
     <Compile Include="Texture.cs" />
   </ItemGroup>
   <ItemGroup>

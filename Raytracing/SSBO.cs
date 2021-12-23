@@ -26,5 +26,10 @@ namespace Raytracing
             GL.UnmapBuffer(BufferTarget.ShaderStorageBuffer);
             return p;
         }
+
+        public void Bind()
+        {
+            GL.BindBufferBase(BufferRangeTarget.ShaderStorageBuffer, 0, Handle);
+        }
     }
 }

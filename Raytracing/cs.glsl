@@ -4,6 +4,7 @@ layout (local_size_x = 8, local_size_y = 8) in;
 
 uniform mat4 projection;
 uniform mat4 view;
+uniform sampler2D skybox;
 
 #define PI 3.1415926538
 
@@ -21,6 +22,10 @@ struct DirectionalLight
     float intensivity;
 };
 
+//layout(std430, binding = 1) buffer DirectionalLightBuffer
+//{
+   // DirectionalLight directionalLight;
+//};
 
 DirectionalLight CreateDirectionalLight(vec3 pos, float i)
 {
@@ -29,7 +34,8 @@ DirectionalLight CreateDirectionalLight(vec3 pos, float i)
     light.intensivity = i;
     return light;
 }
-DirectionalLight directionalLight = CreateDirectionalLight(vec3(-0.4, -0.75, 0.2), 1.0);
+
+DirectionalLight directionalLight = CreateDirectionalLight(vec3(0, 0, -1), 1.0);
 
 Sphere CreateSphere(vec3 pos, float r)
 {
@@ -121,8 +127,8 @@ void IntersectGroundPlane(Ray ray, inout RayHit bestHit)
         bestHit.distance = t;
         bestHit.position = ray.origin + t * ray.direction;
         bestHit.normal = vec3(0.0f, 1.0f, 0.0f);
-        bestHit.albedo = vec3(0.5f, 0.5f, 0.5f);
-        bestHit.specular = vec3(0.1, 0.1, 0.1);
+        bestHit.albedo = vec3(0.8f, 0.8f, 0.8f);
+        bestHit.specular = vec3(0.5, 0.5, 0.5);
     }
 }
 
@@ -146,6 +152,11 @@ float saturate(float v)
     return v;
 }
 
+float atan2(in float y, in float x)
+{
+    return x == 0.0 ? sign(y)*PI/2 : atan(y, x);
+}
+
 vec3 Shade(inout Ray ray, RayHit hit)
 {
     if (hit.distance < 1. / 0)
@@ -167,9 +178,10 @@ vec3 Shade(inout Ray ray, RayHit hit)
     }
     else
     {
-        ray.energy = vec3(0, 0, 0);
-       
-        return vec3(0.80, 0.68, 1.0);
+        //ray.energy = vec3(0, 0, 0);
+        float theta = acos(ray.direction.y) / -PI;
+        float phi = atan2(ray.direction.x, -ray.direction.z) / -PI * 0.5f;
+        return texture2D(skybox, vec2(phi, theta)).xyz;
     }
 }
 
@@ -183,18 +195,19 @@ void main() {
 	ivec2 pixel_coords = ivec2(gl_GlobalInvocationID.xy);
 	ivec2 size = imageSize(framebuffer);
 	vec2 uv = vec2((pixel_coords.xy + vec2(0.5f, 0.5f)) / size * 2.0f - 1.0f);
-	spheres[0] = CreateSphere(vec3(-5, 10, -10), 1.0);
+    uv.y = -uv.y;
+	spheres[0] = CreateSphere(vec3(-5, 0, -10), 1.0);
     spheres[0].albedo = vec3(1, 0, 0);
     spheres[0].specular *= 0.5;
-	spheres[1] = CreateSphere(vec3(1, 10, -10), 2.0);
+	spheres[1] = CreateSphere(vec3(1, 0, -10), 2.0);
     spheres[1].albedo = vec3(1, 1, 0);
     spheres[1].specular *= 0.8;
-	spheres[2] = CreateSphere(vec3(7, 10, -10), 0.5);
+	spheres[2] = CreateSphere(vec3(7, 0, -10), 0.5);
     spheres[2].albedo *= 0.2;
 	Ray ray = CreateCameraRay(uv);
 	
-	vec3 result = vec3(0.3, 0.3, 0.5);
-    for(int i = 0; i < 3; i++)
+	vec3 result = vec3(0.0, 0.0, 0.0);
+    for(int i = 0; i < 5 ; i++)
     {
         RayHit hit = Trace(ray);
         result += ray.energy * Shade(ray, hit);
