@@ -56,13 +56,13 @@ namespace Graphics
             GL.Vertex3(0.0f, 0.0f, 300.0f);
             GL.End();
             
-            Torus.Draw();
+            //Torus.Draw();
             //Pyramid.Draw(center);
             //Octaeder.Draw(center);
             //Trapezoid.Draw(center);
             //Rectangle.Draw(center);
             //Polygon.Draw(center, 50);
-            //Spiral.Draw();
+            Spiral.Draw();
             //TriangleSphere.Draw();
             //Cylinder.Draw(center, 50);
             //LinesSphere.Draw(100, 30, 30);

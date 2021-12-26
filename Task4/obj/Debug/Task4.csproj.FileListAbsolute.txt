@@ -10,3 +10,15 @@ C:\Users\artem\Documents\OpenGL\Task4\obj\Debug\Task4.csproj.CoreCompileInputs.c
 C:\Users\artem\Documents\OpenGL\Task4\obj\Debug\Task4.csproj.CopyComplete
 C:\Users\artem\Documents\OpenGL\Task4\obj\Debug\Task4.exe
 C:\Users\artem\Documents\OpenGL\Task4\obj\Debug\Task4.pdb
+C:\Users\artem\Documents\OpenGLLessons\Task4\bin\Debug\Task4.exe.config
+C:\Users\artem\Documents\OpenGLLessons\Task4\bin\Debug\Task4.exe
+C:\Users\artem\Documents\OpenGLLessons\Task4\bin\Debug\Task4.pdb
+C:\Users\artem\Documents\OpenGLLessons\Task4\bin\Debug\OpenTK.Compatibility.dll
+C:\Users\artem\Documents\OpenGLLessons\Task4\bin\Debug\OpenTK.dll
+C:\Users\artem\Documents\OpenGLLessons\Task4\bin\Debug\OpenTK.GLControl.dll
+C:\Users\artem\Documents\OpenGLLessons\Task4\obj\Debug\Task4.csproj.AssemblyReference.cache
+C:\Users\artem\Documents\OpenGLLessons\Task4\obj\Debug\Task4.csproj.SuggestedBindingRedirects.cache
+C:\Users\artem\Documents\OpenGLLessons\Task4\obj\Debug\Task4.csproj.CoreCompileInputs.cache
+C:\Users\artem\Documents\OpenGLLessons\Task4\obj\Debug\Task4.csproj.CopyComplete
+C:\Users\artem\Documents\OpenGLLessons\Task4\obj\Debug\Task4.exe
+C:\Users\artem\Documents\OpenGLLessons\Task4\obj\Debug\Task4.pdb

@@ -127,18 +127,18 @@ namespace WindowsFormsApp1
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Location = new System.Drawing.Point(816, 11);
+            this.groupBox1.Location = new System.Drawing.Point(646, 11);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(291, 647);
+            this.groupBox1.Size = new System.Drawing.Size(461, 647);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Рисование";
             // 
             // label16
             // 
-            this.label16.Location = new System.Drawing.Point(147, 555);
+            this.label16.Location = new System.Drawing.Point(57, 503);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(50, 20);
@@ -147,7 +147,7 @@ namespace WindowsFormsApp1
             // 
             // textBox16
             // 
-            this.textBox16.Location = new System.Drawing.Point(201, 558);
+            this.textBox16.Location = new System.Drawing.Point(111, 506);
             this.textBox16.Margin = new System.Windows.Forms.Padding(2);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(72, 20);
@@ -155,10 +155,10 @@ namespace WindowsFormsApp1
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(9, 540);
+            this.button10.Location = new System.Drawing.Point(239, 362);
             this.button10.Margin = new System.Windows.Forms.Padding(2);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(113, 57);
+            this.button10.Size = new System.Drawing.Size(195, 61);
             this.button10.TabIndex = 41;
             this.button10.Text = "Стереть правильный многоугольник";
             this.button10.UseVisualStyleBackColor = true;
@@ -166,10 +166,10 @@ namespace WindowsFormsApp1
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(9, 475);
+            this.button11.Location = new System.Drawing.Point(16, 362);
             this.button11.Margin = new System.Windows.Forms.Padding(2);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(113, 61);
+            this.button11.Size = new System.Drawing.Size(208, 61);
             this.button11.TabIndex = 40;
             this.button11.Text = "Рисовать правильный многоугольник";
             this.button11.UseVisualStyleBackColor = true;
@@ -177,7 +177,7 @@ namespace WindowsFormsApp1
             // 
             // label13
             // 
-            this.label13.Location = new System.Drawing.Point(147, 533);
+            this.label13.Location = new System.Drawing.Point(57, 481);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(50, 20);
@@ -186,7 +186,7 @@ namespace WindowsFormsApp1
             // 
             // label14
             // 
-            this.label14.Location = new System.Drawing.Point(147, 510);
+            this.label14.Location = new System.Drawing.Point(57, 458);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(50, 20);
@@ -195,7 +195,7 @@ namespace WindowsFormsApp1
             // 
             // label15
             // 
-            this.label15.Location = new System.Drawing.Point(147, 490);
+            this.label15.Location = new System.Drawing.Point(57, 438);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(50, 20);
@@ -204,7 +204,7 @@ namespace WindowsFormsApp1
             // 
             // textBox13
             // 
-            this.textBox13.Location = new System.Drawing.Point(201, 535);
+            this.textBox13.Location = new System.Drawing.Point(111, 483);
             this.textBox13.Margin = new System.Windows.Forms.Padding(2);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(72, 20);
@@ -212,7 +212,7 @@ namespace WindowsFormsApp1
             // 
             // textBox14
             // 
-            this.textBox14.Location = new System.Drawing.Point(201, 512);
+            this.textBox14.Location = new System.Drawing.Point(111, 460);
             this.textBox14.Margin = new System.Windows.Forms.Padding(2);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(72, 20);
@@ -220,7 +220,7 @@ namespace WindowsFormsApp1
             // 
             // textBox15
             // 
-            this.textBox15.Location = new System.Drawing.Point(201, 490);
+            this.textBox15.Location = new System.Drawing.Point(111, 438);
             this.textBox15.Margin = new System.Windows.Forms.Padding(2);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(72, 20);
@@ -228,7 +228,7 @@ namespace WindowsFormsApp1
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(9, 434);
+            this.button8.Location = new System.Drawing.Point(111, 223);
             this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(113, 37);
@@ -239,10 +239,10 @@ namespace WindowsFormsApp1
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(9, 393);
+            this.button9.Location = new System.Drawing.Point(9, 223);
             this.button9.Margin = new System.Windows.Forms.Padding(2);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(113, 37);
+            this.button9.Size = new System.Drawing.Size(97, 37);
             this.button9.TabIndex = 32;
             this.button9.Text = "Рисовать многоугольник";
             this.button9.UseVisualStyleBackColor = true;
@@ -250,10 +250,10 @@ namespace WindowsFormsApp1
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(9, 352);
+            this.button7.Location = new System.Drawing.Point(111, 190);
             this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(113, 37);
+            this.button7.Size = new System.Drawing.Size(113, 20);
             this.button7.TabIndex = 31;
             this.button7.Text = "Ввести";
             this.button7.UseVisualStyleBackColor = true;
@@ -261,7 +261,7 @@ namespace WindowsFormsApp1
             // 
             // label12
             // 
-            this.label12.Location = new System.Drawing.Point(11, 306);
+            this.label12.Location = new System.Drawing.Point(9, 162);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(108, 20);
@@ -270,27 +270,27 @@ namespace WindowsFormsApp1
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(12, 328);
+            this.textBox12.Location = new System.Drawing.Point(12, 190);
             this.textBox12.Margin = new System.Windows.Forms.Padding(2);
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(107, 20);
+            this.textBox12.Size = new System.Drawing.Size(94, 20);
             this.textBox12.TabIndex = 29;
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(140, 311);
+            this.listBox1.Location = new System.Drawing.Point(228, 162);
             this.listBox1.Margin = new System.Windows.Forms.Padding(2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(133, 160);
+            this.listBox1.Size = new System.Drawing.Size(202, 160);
             this.listBox1.TabIndex = 28;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(14, 228);
+            this.button6.Location = new System.Drawing.Point(228, 84);
             this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(113, 63);
+            this.button6.Size = new System.Drawing.Size(65, 63);
             this.button6.TabIndex = 27;
             this.button6.Text = "Отменить эллипс";
             this.button6.UseVisualStyleBackColor = true;
@@ -298,7 +298,7 @@ namespace WindowsFormsApp1
             // 
             // label11
             // 
-            this.label11.Location = new System.Drawing.Point(142, 271);
+            this.label11.Location = new System.Drawing.Point(309, 127);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(49, 20);
@@ -307,7 +307,7 @@ namespace WindowsFormsApp1
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(195, 274);
+            this.textBox11.Location = new System.Drawing.Point(362, 130);
             this.textBox11.Margin = new System.Windows.Forms.Padding(2);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(72, 20);
@@ -315,7 +315,7 @@ namespace WindowsFormsApp1
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(142, 249);
+            this.label6.Location = new System.Drawing.Point(309, 105);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 20);
@@ -324,7 +324,7 @@ namespace WindowsFormsApp1
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(142, 226);
+            this.label7.Location = new System.Drawing.Point(309, 82);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 20);
@@ -333,7 +333,7 @@ namespace WindowsFormsApp1
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point(142, 203);
+            this.label8.Location = new System.Drawing.Point(309, 59);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(50, 20);
@@ -342,7 +342,7 @@ namespace WindowsFormsApp1
             // 
             // label9
             // 
-            this.label9.Location = new System.Drawing.Point(142, 180);
+            this.label9.Location = new System.Drawing.Point(309, 36);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(50, 20);
@@ -351,7 +351,7 @@ namespace WindowsFormsApp1
             // 
             // label10
             // 
-            this.label10.Location = new System.Drawing.Point(142, 160);
+            this.label10.Location = new System.Drawing.Point(309, 16);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(50, 20);
@@ -360,7 +360,7 @@ namespace WindowsFormsApp1
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(196, 251);
+            this.textBox6.Location = new System.Drawing.Point(363, 107);
             this.textBox6.Margin = new System.Windows.Forms.Padding(2);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(71, 20);
@@ -368,7 +368,7 @@ namespace WindowsFormsApp1
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(196, 228);
+            this.textBox7.Location = new System.Drawing.Point(363, 84);
             this.textBox7.Margin = new System.Windows.Forms.Padding(2);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(71, 20);
@@ -376,7 +376,7 @@ namespace WindowsFormsApp1
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(196, 206);
+            this.textBox8.Location = new System.Drawing.Point(363, 62);
             this.textBox8.Margin = new System.Windows.Forms.Padding(2);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(71, 20);
@@ -384,7 +384,7 @@ namespace WindowsFormsApp1
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(197, 183);
+            this.textBox9.Location = new System.Drawing.Point(364, 39);
             this.textBox9.Margin = new System.Windows.Forms.Padding(2);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(70, 20);
@@ -392,7 +392,7 @@ namespace WindowsFormsApp1
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(196, 160);
+            this.textBox10.Location = new System.Drawing.Point(363, 16);
             this.textBox10.Margin = new System.Windows.Forms.Padding(2);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(71, 20);
@@ -400,10 +400,10 @@ namespace WindowsFormsApp1
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(14, 163);
+            this.button5.Location = new System.Drawing.Point(228, 19);
             this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(113, 60);
+            this.button5.Size = new System.Drawing.Size(65, 60);
             this.button5.TabIndex = 14;
             this.button5.Text = "Рисовать эллипс";
             this.button5.UseVisualStyleBackColor = true;
@@ -411,10 +411,10 @@ namespace WindowsFormsApp1
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(10, 601);
+            this.button4.Location = new System.Drawing.Point(9, 597);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(263, 36);
+            this.button4.Size = new System.Drawing.Size(421, 36);
             this.button4.TabIndex = 13;
             this.button4.Text = "Очистить экран";
             this.button4.UseVisualStyleBackColor = true;
@@ -422,7 +422,7 @@ namespace WindowsFormsApp1
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(140, 121);
+            this.label5.Location = new System.Drawing.Point(84, 113);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(50, 20);
@@ -431,7 +431,7 @@ namespace WindowsFormsApp1
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(147, 97);
+            this.label4.Location = new System.Drawing.Point(91, 89);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(26, 20);
@@ -440,7 +440,7 @@ namespace WindowsFormsApp1
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(147, 73);
+            this.label3.Location = new System.Drawing.Point(91, 65);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(27, 20);
@@ -449,7 +449,7 @@ namespace WindowsFormsApp1
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(147, 47);
+            this.label2.Location = new System.Drawing.Point(91, 39);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(27, 20);
@@ -458,7 +458,7 @@ namespace WindowsFormsApp1
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(147, 24);
+            this.label1.Location = new System.Drawing.Point(91, 16);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(27, 20);
@@ -467,7 +467,7 @@ namespace WindowsFormsApp1
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(195, 118);
+            this.textBox5.Location = new System.Drawing.Point(139, 110);
             this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(72, 20);
@@ -475,7 +475,7 @@ namespace WindowsFormsApp1
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(195, 94);
+            this.textBox4.Location = new System.Drawing.Point(139, 86);
             this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(72, 20);
@@ -483,7 +483,7 @@ namespace WindowsFormsApp1
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(196, 70);
+            this.textBox3.Location = new System.Drawing.Point(140, 62);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(72, 20);
@@ -491,7 +491,7 @@ namespace WindowsFormsApp1
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(196, 47);
+            this.textBox2.Location = new System.Drawing.Point(140, 39);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(72, 20);
@@ -499,7 +499,7 @@ namespace WindowsFormsApp1
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(196, 24);
+            this.textBox1.Location = new System.Drawing.Point(140, 16);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(72, 20);
@@ -510,7 +510,7 @@ namespace WindowsFormsApp1
             this.button3.Location = new System.Drawing.Point(14, 79);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(113, 54);
+            this.button3.Size = new System.Drawing.Size(71, 54);
             this.button3.TabIndex = 2;
             this.button3.Text = "Стереть линию";
             this.button3.UseVisualStyleBackColor = true;
@@ -521,7 +521,7 @@ namespace WindowsFormsApp1
             this.button2.Location = new System.Drawing.Point(14, 24);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(113, 51);
+            this.button2.Size = new System.Drawing.Size(71, 51);
             this.button2.TabIndex = 1;
             this.button2.Text = "Рисовать линию";
             this.button2.UseVisualStyleBackColor = true;
@@ -535,7 +535,7 @@ namespace WindowsFormsApp1
             this.pictureBox1.Location = new System.Drawing.Point(4, 16);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(794, 627);
+            this.pictureBox1.Size = new System.Drawing.Size(624, 627);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -546,7 +546,7 @@ namespace WindowsFormsApp1
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(802, 647);
+            this.groupBox2.Size = new System.Drawing.Size(632, 647);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Область рисования";
@@ -555,7 +555,7 @@ namespace WindowsFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1118, 667);
+            this.ClientSize = new System.Drawing.Size(1115, 667);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(2);

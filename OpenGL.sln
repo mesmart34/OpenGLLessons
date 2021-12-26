@@ -13,11 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task3", "Task3\Task3.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task6", "Task6\Task6.csproj", "{C7A81DDE-87C9-49B3-B2BA-4E87EF9DD427}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task8", "Task8\Task8.csproj", "{F7868435-F92F-4B33-9E6E-9F3E8365B7F7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task7", "Task7\Task7.csproj", "{56137784-AA42-47BB-A87E-CEA0993599E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raytracing", "Raytracing\Raytracing.csproj", "{FB2F21C0-D20B-46D9-839B-8F3122267523}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task8", "Task8\Task8.csproj", "{FB2F21C0-D20B-46D9-839B-8F3122267523}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,10 +43,6 @@ Global
 		{C7A81DDE-87C9-49B3-B2BA-4E87EF9DD427}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7A81DDE-87C9-49B3-B2BA-4E87EF9DD427}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7A81DDE-87C9-49B3-B2BA-4E87EF9DD427}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F7868435-F92F-4B33-9E6E-9F3E8365B7F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F7868435-F92F-4B33-9E6E-9F3E8365B7F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F7868435-F92F-4B33-9E6E-9F3E8365B7F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F7868435-F92F-4B33-9E6E-9F3E8365B7F7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{56137784-AA42-47BB-A87E-CEA0993599E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{56137784-AA42-47BB-A87E-CEA0993599E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56137784-AA42-47BB-A87E-CEA0993599E5}.Release|Any CPU.ActiveCfg = Release|Any CPU

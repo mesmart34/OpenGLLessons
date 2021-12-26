@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+using OpenTK;
 
 namespace Task8
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1()); 
+            var ray = new Raytracing();
+            ray.Run(60.0);
         }
     }
 }
